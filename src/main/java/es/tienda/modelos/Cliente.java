@@ -19,7 +19,7 @@ public class Cliente extends Persona {
     public TipoCliente getTipoCliente() { return tipoCliente; }
     public void setTipoCliente(TipoCliente tipoCliente) { this.tipoCliente = tipoCliente; }
 
-    public static Cliente darDeAlta(String nombre, String apellidos, String dni, String email, String direccion, TipoCliente tipoCliente) {
+    public static Cliente darDeAlta(String nombre, String apellidos, String dni, TipoCliente tipoCliente) {
         return new Cliente(nombre, apellidos, dni, tipoCliente);
     }
 
