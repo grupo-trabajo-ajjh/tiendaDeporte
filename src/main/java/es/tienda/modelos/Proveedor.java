@@ -15,6 +15,14 @@ public class Proveedor extends Persona {
         this.tipoProveedor = tipoProveedor;
     }
 
+    public Proveedor(String nombre, String apellidos, String dni) {
+        this(nombre, apellidos, dni, TipoProveedor.SERVICIO);
+    }
+
+    public Proveedor() {
+        this("", "", "", TipoProveedor.SERVICIO);
+    }
+
     public TipoProveedor getTipoProveedor() {
         return tipoProveedor;
     }
