@@ -33,5 +33,4 @@ public class Articulos {
         return nuevoArticulo;
     }
 
-
 }
