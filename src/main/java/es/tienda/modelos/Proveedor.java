@@ -37,4 +37,12 @@ public class Proveedor extends Persona {
         System.out.println("DNI: " + getDni());
         System.out.println("Tipo: " + tipoProveedor);
     }
+
+    public static Proveedor darDeAlta(String nombre, String apellidos, String dni, TipoProveedor tipoProveedor) {
+        Proveedor nuevoProveedor = new Proveedor(nombre, apellidos, dni, tipoProveedor);
+        System.out.println("Proveedor dado de alta correctamente:");
+        nuevoProveedor.mostrarDatos();
+        return nuevoProveedor;
+    }
+
 }
