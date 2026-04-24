@@ -11,24 +11,9 @@ public class Cliente extends Persona {
 
     private TipoCliente tipoCliente;
 
-    public Cliente(String nombre, String apellidos, String dni, String email, String direccion, TipoCliente tipoCliente) {
-        super(nombre, apellidos, dni);
-        this.tipoCliente = tipoCliente;
-    }
-
     public Cliente(String nombre, String apellidos, String dni, TipoCliente tipoCliente) {
         super(nombre, apellidos, dni);
         this.tipoCliente = tipoCliente;
-    }
-
-    public Cliente(String nombre, String apellidos, String dni, String email, String direccion) {
-        super(nombre, apellidos, dni);
-        this.tipoCliente = TipoCliente.POTENCIAL;
-    }
-
-    public Cliente(String nombre, String apellidos, String dni) {
-        super(nombre, apellidos, dni);
-        this.tipoCliente = TipoCliente.POTENCIAL;
     }
 
     public TipoCliente getTipoCliente() { return tipoCliente; }
